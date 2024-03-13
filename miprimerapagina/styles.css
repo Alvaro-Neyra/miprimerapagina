@@ -93,6 +93,7 @@ body {
 .seccion3-image img {
     border-radius: 2rem;
     margin-bottom: 1rem;
+    max-height: 350px;
     cursor: pointer;
     width: 100%;
     transition: transform 0.3s ease;
@@ -101,13 +102,13 @@ body {
     transform: scale(105%);
 }
 .seccion3-image h2 {
-    color: orange;
+    color: rgb(131, 85, 0);
 }
 .seccion3-image p {
     color: gray;
 }
 .seccion3-image a {
-    color: orange;
+    color: rgb(131, 85, 0);
 }
 .seccion3-image a:hover {
     color: rgb(131, 85, 0)
@@ -174,7 +175,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    background-color: orange;
+    background-color: rgb(77, 51, 3);
     border: none;
     border-radius: 3px;
     padding: 10px 40px;
@@ -184,7 +185,7 @@ body {
     background-color: rgb(131, 85, 0);
 }  
 .form-row button:active {
-    background-color: rgb(187, 122, 0);
+    background-color: rgb(77, 51, 3);
 }
 /*------ parrafo alerta style ---------- */
 .alertas {
