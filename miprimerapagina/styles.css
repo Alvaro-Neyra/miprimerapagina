@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: inherit;
+}
+#seccion-principal {
+    margin-top: 5rem;
+}
+.nav-container {
+    display: flex;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.nav-container a{
+    color: rgb(149, 149, 149);
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+.nav-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1rem;
+    margin-right: 1rem;
+    color: rgb(185, 183, 183);
+}
+.nav-container ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+}
+/*Hamburguesa:*/
+#check {
+    display: none;
+}
+.checkbtn {
+    display: none;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+/*Seccion 1*/
+.seccion-1 .acerca-imagen img {
+    width: 300px;
+    height: 200px;
+}
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5rem;
+    text-align: right;
+    gap: 1.5rem;
+}
+.seccion-2 img{
+    width: 100%;
+}
+/*seccion 3:*/
+.seccion-3-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.seccion3-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 45%;
+}   
+.seccion3-image img {
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.seccion3-image img:hover {
+    transform: scale(105%);
+}
+.seccion3-image h2 {
+    color: orange;
+}
+.seccion3-image p {
+    color: gray;
+}
+.seccion3-image a {
+    color: orange;
+}
+.seccion3-image a:hover {
+    color: rgb(131, 85, 0)
+}
+/*------------ form-seccion styles ---------------- */
+.seccion-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion-form .formulario-container {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+}
+.formulario-container h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form-row input[type="text"], .form-row input[type="email"], .form-row textarea{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+    width: 100%;
+}
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: orange;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.form-row button:hover {
+    background-color: rgb(131, 85, 0);
+}  
+.form-row button:active {
+    background-color: rgb(187, 122, 0);
+}
+/*------ parrafo alerta style ---------- */
+.alertas {
+    background-color: red;
+}
+/*------------ footer styles --------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: azure;
+}
+footer nav ul{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+footer h3 {
+    font-size: 2rem;
+}
+footer nav ul li {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+footer nav ul li a:hover {
+    color:rgb(149, 149, 149);
+}
+@media (max-width: 800px) {
+    .seccion-1 {
+        padding: 5rem 5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .seccion3-image {
+        width: 100%;
+    }
+    .seccion-3-images {
+        flex-direction: column;
+    }
+    footer {
+        padding: 5rem 1rem;
+    }
+    footer nav ul {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    footer{
+        font-size: 5rem;
+    }
+    .checkbtn {
+        display: block;
+    }
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgb(60, 47, 37);
+        text-align: center;
+        top: 112px;
+        left: 100%;
+        transition: all 0.3s;
+    }
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn {
+        color:rgb(149, 149, 149);
+    }
+    .seccion-form {
+        padding: 50px;
+    }
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .form-row input[type="text"], .form-row input[type="email"] {
+        width: 250px;
+        height: initial;
+    }
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+    .form-row textarea {
+        width: 250px;
+    }
+    .form-row button {
+        margin-left: 120px;
+    }
+}

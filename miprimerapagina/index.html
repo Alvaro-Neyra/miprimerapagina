@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/601d08e887.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="encabezado">
+            <div class="nav-container">
+                <a href="index.html"><i class="fa-solid fa-user-secret"></i></a>
+                <nav>
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#acerca-de">Acerca de mi</a></li>
+                        <li><a href="#trabajos">Trabajos</a></li>
+                        <li><a href="index.html">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="seccion-principal">
+            <section id="acerca-de" class="seccion-1">
+                <div class="acerca-de">
+                    <h2 class="roboto-thin">Acerca de mi</h2>
+                    <p class="parrafo1">Bienvenid@ a mi pagina! Aqui, aprenderas mas sobre mi.</p>
+                    <p class="parrafo2">Me llamo Alvaro, naci en Lima, Peru. Me gusta mucho la tecnologia y los deportes. Me gustaria aprender mas y fortalecer mis conocimientos sobre este mundo de la programacion y tecnologia para crear un mundo mejor para todas las personas.</p>
+                </div>
+                <div class="acerca-imagen">    
+                    <img src="images/galaxia.jpg" alt="Imagen Personal" title="galaxia">
+                </div>
+            </section>
+            <section class="seccion-2">
+                <img src="images/persona-caminando.jpg" alt="Imagen de carrusel">
+            </section>
+            <section id="trabajos" class="seccion-3">
+                <div class="seccion-3-images">
+                    <div class="seccion3-image">
+                        <img src="https://framerusercontent.com/images/y8E2Ks8iP03wV8ub5Guava26o.jpg?scale-down-to=512" alt="imagen 1">
+                        <h2>Recursos Gratuitos</h2>
+                        <p>Con estos recursos te invito a recargar tu mochila creativa, trabajar sobre tu branding personal, explorar la técnica del collage y reconectar con tu niñx interior. ¡Descargalos y empezá hoy mismo!</p>
+                        <a href="https://www.minicarbono.com/recursos" target="_blank">Saber Mas</a>
+                    </div>
+                    <div class="seccion3-image">
+                        <img src="https://framerusercontent.com/images/apRZy0OCqKly2g021mJrOI1LyE.jpg?scale-down-to=512" alt="imagen 2">
+                        <h2>Cursos Online</h2>
+                        <p>Conocé mi oferta de cursos de creatividad introspectiva: Autopromoción para Creativos, Passion Projects, Barajar y Dar de Nuevo y Luz, Cámara, Emoción.</p>
+                        <a href="https://www.minicarbono.com/cursos" target="_blank">Saber Mas</a>
+                    </div>
+                </div>
+            </section>
+            <section class="seccion-form" id="contacto">
+                <div class="formulario-container">
+                    <h1>Contacto</h1>
+                    <p><em>!Espero tu consulta!</em></p>
+                    <form method="get" action="" class="formulario" id="form">
+                        <div class="form-row">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" name="nombre" type="text">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input 
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="ejemplo@gmail.com"
+                            required
+                            >
+                        </div>
+                        <div class="form-row">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button>Enviar</button>
+                        </div>
+                        <p class="alertas"></p>
+                    </form>
+                    <p class="alertas" id="alertas"></p>
+                </div>
+                </section>
+        </main>
+        <footer>
+            <h3>Contacto</h3>
+            <nav>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i><a href="https://www.linkedin.com/in/alvaro-alberto-neyra-salazar-970968262/" target="_blank">Linkedin</a></li>
+                    <li><i class="fa-brands fa-github"></i><a href="https://www.github.com/Alvaro-Neyra" target="_blank">GitHub</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:alvaroprogramador.neyra.salazar@gmail.com" target="_blank">Email</a></li>
+                    <li><i class="fa-brands fa-whatsapp"></i><a href="https://api.whatsapp.com/send/?phone=%2B51929589271&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
